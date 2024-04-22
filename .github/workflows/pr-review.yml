@@ -8,7 +8,7 @@ jobs:
         runs-on: ubuntu-latest
         container: alpine:latest
         steps:
-            - run: echo "hello world"
+            - run: echo "hello ${{ github.event.pull_request.user.login }}"
             
         
 
