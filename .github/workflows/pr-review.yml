@@ -1,0 +1,16 @@
+---
+
+name: PR best practices
+on:
+    pull_request: {}
+jobs:
+    merge_metadata:
+        runs-on: ubuntu-latest
+        container: alpine:latest
+        steps:
+            - run: echo "hello world"
+            
+        
+
+
+
